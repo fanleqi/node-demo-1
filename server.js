@@ -32,7 +32,10 @@ var server = http.createServer(function (request, response) {
                 <link rel="stylesheet" href="/x">
             </head>
             <body>
-                <h1>标题</h1>
+                <h1>小叭是猪猪，并留下一句话：小可爱冲鸭！祝他复试通过考本校成功叭~</h1>
+                <h1>萱萱是大漂亮姐姐，希望她能早日找到感兴趣的领域然后找到心仪的工作，猫狗双全！</h1>
+                <h1>zhy居居是可爱狗子，让我们祝不想工作的他考研成功考回重庆~</h1>
+                <h1>BY 七七 2021.3.9<h1>
                 <script src='/y'></script>
             </body>
         `)
@@ -40,7 +43,7 @@ var server = http.createServer(function (request, response) {
     } else if (path === '/x') {
         response.statusCode = 200
         response.setHeader('Content-Type', 'text/css;charset=utf-8')
-        response.write(`h1{color: red;}`)
+        response.write(`h1{color: skyblue;}`)
         response.end()
     } else if (path === '/y') {
         response.statusCode = 200
